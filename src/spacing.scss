@@ -1,0 +1,66 @@
+$sides: (
+  'top': 't',
+  'right': 'r',
+  'bottom': 'b',
+  'left': 'l',
+);
+
+@each $side, $letter in $sides {
+  @for $px from 1 through 10 {
+    .m#{$letter}-#{$px * 5} {
+      margin-#{$side}: #{$px * 5}px !important;
+    }
+
+    .p#{$letter}-#{$px * 5} {
+      padding-#{$side}: #{$px * 5}px !important;
+    }
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.m-n-10 {
+  margin: 0 -10px;
+}
+
+.p-30 {
+  padding: var(--spacing--30);
+}
+
+.p-20 {
+  padding: var(--spacing--20);
+}
+
+.pv-40 {
+  padding: 0 var(--spacing--40);
+}
+
+.p-30 {
+  padding: var(--spacing--30);
+}
+
+.p-40 {
+  padding: var(--spacing--40);
+}
+
+.pv-30 {
+  padding: 0 var(--spacing--30);
+}
+
+.ph-40 {
+  padding: var(--spacing--40) 0;
+}
+
+.pb-20 {
+  padding-bottom: var(--spacing--20);
+}
+
+.h-100 {
+  height: 100%;
+}
