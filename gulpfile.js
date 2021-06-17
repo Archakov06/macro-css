@@ -4,7 +4,7 @@ const rename = require('gulp-rename');
 
 gulp.task('build', () => {
   return gulp
-    .src('./src/atomcss.scss')
+    .src('./src/index.scss')
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('./'));
