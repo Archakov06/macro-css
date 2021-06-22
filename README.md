@@ -94,7 +94,7 @@ Yarn:
 | justify-center  | justify-content: center;        |
 | align-center    | align-items: center;            |
 | align-end       | align-items: flex-end;          |
-| align-start     | display: inline-block;          |
+| align-start     | align-items: flex-start;        |
 | flex-column     | flex-direction: column;         |
 | flex-row        | flex-direction: row;            |
 | flex-wrap       | flex-wrap: wrap;                |
